@@ -6,14 +6,10 @@
 - [微信小程序中使用websocket的一种思路](./websocket-in-wechat-mini-program.md)
 
 #### 小程序开发中遇到的问题
-- [wxml问题](./bug/wxml.md)
-- [wxss问题](./bug/wxss.md)
-- [js问题](./bug/js.md)
-- [小程序API问题](./bug/api.md)
-- [其他](./bug/other.md)
+- [wxml问题](./Bug/wxml.md)
+- [wxss问题](./Bug/wxss.md)
+- [js问题](./Bug/js.md)
+- [小程序API问题](./Bug/api.md)
 
 #### 小程序开发中的一些技巧
-- [技巧](./skill/main.md)
-
-#### 小程序开发中的注意点
-- [注意点](./attention/main.md)
+- [占位](#README.md)
