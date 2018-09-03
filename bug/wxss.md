@@ -20,3 +20,21 @@
 3、wxss不支持部分css3选择器。
 
 4、小程序view中英文数字不换行的问题，添加word-break:break-all;即可
+
+5、文字间距
+```
+<view style='display: inline-block;'>
+  文字1
+</view>
+<view style='display: inline-block;'>
+  文字2
+</view>
+```
+
+这种在真机上两段文字之间会有空格，修改为:
+
+```
+<view style='display: inline-block;'>文字1</view>
+<view style='display: inline-block;'>文字2</view>
+```
+可去除文字间空格
