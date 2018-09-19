@@ -15,3 +15,10 @@
 - 对于想要获取分享信息的，可在分享后点击群内分享消息卡片，在App的onLaunch与onShow(建议在onShow中获取，onLaunch在小程序整个生命周期中只会执行一次)中可获取shareTicket ，用来换取群唯一标识 openGId ，进而显示对应群的相关信息的小程序。
 
 详见[这里](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=0006823675c0e82a8307c6db25bc09)。
+
+8、微信小程序对于iOS端虚拟支付的调整
+- 什么是虚拟支付？
+  - 虚拟支付是指购买非实物商品。比如：VIP会员、充值、课程、音视频等虚拟产品。
+  
+之后iOS端的虚拟支付，将不再被允许，新提交的代码中若含有虚拟支付代码，`将无法通过审核`
+详见[这里](https://developers.weixin.qq.com/community/develop/doc/000464b5b3cb382b9d372b98f5ac08)。
