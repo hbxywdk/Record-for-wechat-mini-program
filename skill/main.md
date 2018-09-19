@@ -102,3 +102,25 @@ onLoad: function () {
     })
 }
 ```
+6、 H5中判断是否是在小程序web-view中打开
+-小程序中使用UA判断浏览器环境并不好使
+```
+（1）小程序web-view打开的地址中加入参数，如：xxx.com?from=miniprogarm，之后再在H5中判断。
+
+（2）官方给出的方法
+在网页内可通过window.__wxjs_environment变量判断是否在小程序环境，建议在WeixinJSBridgeReady回调中使用，也可以使用JSSDK 1.3.2提供的getEnv接口。
+// web-view下的页面内
+function ready() {
+  console.log(window.__wxjs_environment === 'miniprogram') // true
+}
+if (!window.WeixinJSBridge || !WeixinJSBridge.invoke) {
+  document.addEventListener('WeixinJSBridgeReady', ready, false)
+} else {
+  ready()
+}
+
+// 或者
+wx.miniProgram.getEnv(function(res) {
+  console.log(res.miniprogram) // true
+})
+```
