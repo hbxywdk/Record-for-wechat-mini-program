@@ -46,5 +46,6 @@ wx.showModal({
     }
 })
 ```
+注意：方法3，若在封装中使用了promise则无法调起setting页面，将所有的promise方式改成callback回调的方式就能正常的调起（promise是异步的，“点击行为允许调用”这个机制要求是同步的”）。
 
 
