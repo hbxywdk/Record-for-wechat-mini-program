@@ -19,4 +19,4 @@
 - [注意点](./attention/main.md)
 
 #### 官方API调整
-- [注意点](./api/apiAdjust.md)
+- [API调整](./api/apiAdjust.md)

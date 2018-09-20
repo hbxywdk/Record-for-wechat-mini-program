@@ -15,7 +15,7 @@ onLoad (options) {
 2、iOS端，page中开启了下拉刷新，又使用了 toast / loading，下拉刷新时页面会有一个很大的回弹动作，解决方法为去掉微信的toast / loading或自己写loadinng弹框。
 
 
-3、canvas等元素 不支持 overflow:hidden，具体见[这里](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0006c6618607c07989f6acd015b000&highline=overflow)
+3、canvas等元素使用的是App原生组件 不支持 overflow:hidden，具体见[这里](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0006c6618607c07989f6acd015b000&highline=overflow)
 
 4、小程序不易打开过多页面，目前页面路径最多只能打开十层。
 
