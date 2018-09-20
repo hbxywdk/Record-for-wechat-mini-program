@@ -17,3 +17,6 @@
 
 #### 小程序开发中的注意点
 - [注意点](./attention/main.md)
+
+#### 官方API调整
+- [注意点](./api/apiAdjust.md)
