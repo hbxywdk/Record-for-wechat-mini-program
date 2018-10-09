@@ -23,3 +23,5 @@ onLoad (options) {
 
 6、获取设备高度问题  
 ![图片](../image/1.png)
+
+7、小程序无法设置与使用Cookie，服务端也无法使用返回头Set-Cookie来设置Cookie。
