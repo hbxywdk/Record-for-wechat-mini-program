@@ -17,6 +17,8 @@
 
 #### 小程序开发中的注意点
 - [注意点](./attention/main.md)
+- [小程序中使用字体](./attention/font.md)
+
 
 #### 官方API调整
 - [API调整](./api/apiAdjust.md)
