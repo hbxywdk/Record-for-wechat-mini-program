@@ -50,7 +50,7 @@ wx.showModal({
 ```
 注意：方法3，若在封装中使用了promise则无法调起setting页面，将所有的promise方式改成callback回调的方式就能正常的调起（promise是异步的，“点击行为允许调用”这个机制要求是同步的”）。 
 
-#### 5、2018-11-14，微信调整小程序跳转小程序功能，具体为：
+#### 5、微信调整小程序跳转小程序功能（2018-11-14）
 > 使用跳转其他小程序功能，则需要在代码配置中声明将要跳转的小程序名单，限定不超过10个。该名单可在发布新版时更新，不支持动态修改。
 具体配置为在app.json中添加navigateToMiniProgramAppIdList（String、Array）一项：
 ```
@@ -80,5 +80,21 @@ wx.showModal({
 }
 ```
 该调整导致所有游戏盒子类小程序凉凉。
+详见[这里](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&announce_id=11541056526eufNY&version=&lang=zh_CN)。
 
+##### 6、对于自定义导航栏样式的支持。
+详见[这里](https://developers.weixin.qq.com/community/develop/doc/000408d3d34178b682d7bdee259401)。
 
+##### 7、获取用户位置信息时需填写用途说明（2018-12-26）
+> 根据 iOS 系统对用户隐私保护的要求，同时我们也为了让用户可以更好的判断是否要将地理位置信息提供给开发者，故调整为当小程序/小游戏获取用户地理位置信息时，开发者需要填写获取用户地理位置的用途说明。
+具体配置：
+
+在 app.json 里面增加 permission 属性配置（小游戏需在game.json中配置）
+```
+"permission": {
+    "scope.userLocation": {
+        "desc": "位置信息用途说明"
+    }
+}
+```
+##### 但目前该方法并不支持多语言。
